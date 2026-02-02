@@ -1,11 +1,9 @@
 """
-PortRecon — ollama_model_list helper
+PortRecon — ollama_model_list.
 
 This change:
-- Normalizes host input (accepts bare host:port or http(s)://host:port).
-- Removes /api/ps runtime probe (runtime is left as "unknown").
-- Adds a CLI, logging and better JSON error messages for /api/tags responses.``
-- Writes a filtered JSON file containing only hosts that returned models.
+Scans a list of Ollama hosts and exports the available models to JSON and CSV files.
+
 
 Use:
   python main.py --hosts hosts.txt
